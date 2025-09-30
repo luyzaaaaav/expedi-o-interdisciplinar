@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
     margin: 0;
     padding: 0;
-    background: #f5f6fa; /* Cor de fundo suave */
+    background: #fbf0ff; /* Cor de fundo suave */
     color: #333; /* Cor principal do texto */
 }
  
@@ -10,12 +10,12 @@ body {
    CABEÇALHO
    ======================== */
 header {
-    background: linear-gradient(135deg, #5196ff, #3469fc); /* Degradê roxo */
+    background: linear-gradient(135deg, #a639ff, #9036cc); /* Degradê roxo */
     color: white; /* Texto branco */
     text-align: center; /* Centraliza o  título */
-    padding: 40px 20px; /* Espaçamento interno */
+    padding: 30px 10px; /* Espaçamento interno */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra */
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
  
 header h1 {
@@ -30,7 +30,11 @@ header h1 {
 h1, h2 {
     text-align: center;
     margin-top: 30px;
-    color: #0c0b75; /* Roxo */
+    color: #380164; /* Roxo */
+}
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px auto;
 }
  
 /* ========================
@@ -57,18 +61,20 @@ p {
 }
  
 .imagem-container {
-    max-width: 250px; /* Limite de largura */
-    max-height: 400px;
+    justify-self: center;
     background: white; /* Fundo branco */
     border-radius: 15px; /* Bordas arredondadas */
     overflow: hidden; /* Impede que imagem ultrapasse a borda */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
     text-align: center; /* Centraliza legenda */
+    display: flex;
+    width: auto;
+    margin: 30px;
 }
  
 .imagem-container img {
-    width: 100%; /* Faz a imagem ocupar todo o espaço do container */
+    width: 400px; /* Faz a imagem ocupar todo o espaço do container */
     height: auto; /* Mantém proporção */
     display: block;
     object-fit: fill;
